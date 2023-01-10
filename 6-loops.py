@@ -9,6 +9,9 @@ for -> for item in interable:
     - list [1,2,3,4,5]
     - range =range(1,10) - 1,2,3,4,5,6,7,8,9
 
+while -> while boolean_expression:
+            # execute
+
 """
 
 name = "Fabio"
@@ -57,3 +60,30 @@ qtd = 5
 
 for n in range(1, qtd+1):
     print(n)
+
+enable = True 
+number = 0
+
+while enable:
+
+    print(f"Loop while - {number}")
+    
+    if number == 5:
+        enable = False 
+    else:
+        number += 1
+
+enable = True
+number = 0
+
+while enable:
+
+    print(f"Loop while - {number}")
+
+    if number == 3:
+        break
+    
+    if number == 5:
+        enable = False 
+    else:
+        number += 1
