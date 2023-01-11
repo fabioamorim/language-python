@@ -105,3 +105,12 @@ names = ['Paul', 'Mary', 'Maria', 'Antony']
 
 for index, value in enumerate(names):
     print(f"index: {index} - name: {value}")
+
+# slicing
+
+lista = [1,2,3,4]
+print(lista[0::])
+# [1, 2, 3, 4]
+
+print(lista[0:2])
+# [1, 2]
