@@ -100,3 +100,8 @@ print(numbers)
 print(numbers2)
 #[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 100, [101, 102, 103], 200, 203]
 #[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 100, [101, 102, 103], 200, 203, 204]
+
+names = ['Paul', 'Mary', 'Maria', 'Antony']
+
+for index, value in enumerate(names):
+    print(f"index: {index} - name: {value}")
