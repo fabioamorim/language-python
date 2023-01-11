@@ -20,6 +20,9 @@ print(numbers2)
 print(type(numbers2))
 # <class 'list'>
 
+print(type([]))
+# <class 'list'>
+
 print(numbers2[1])
 # 2 
 
