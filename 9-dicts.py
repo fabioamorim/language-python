@@ -97,3 +97,40 @@ print(bill)
 del bill['mar']
 print(bill)
 # {'jan': 700, 'feb': 300}
+
+for key in bill:
+    print(key)
+"""
+jan
+feb
+"""
+
+for key in bill:
+    print(f'{key} : {bill[key]}')
+"""
+jan : 700
+feb : 300
+"""
+
+print(bill.keys())
+# dict_keys(['jan', 'feb'])
+
+for key in bill.keys():
+    print(bill[key])
+"""
+700
+300
+"""
+
+print(bill.values())
+# dict_values([700, 300])
+
+for value in bill.values():
+    print(value)
+"""
+700
+300
+"""
+
+for key, value in bill.items():
+    print(f'key:{key} - value:{value}')
