@@ -3,7 +3,7 @@ Comprehensions
 
 - list comprehensions
 
-[data for data in iterable]
+newlist = [expression for item in iterable [if condition == True]]
 
 """
 
@@ -51,3 +51,12 @@ print([number for number in n1 if number % 2 ==0])
 
 print([number * 2 if number % 2 == 0 else number /2 for number in n1])
 # [0, 0.5, 4, 1.5, 8, 2.5, 12, 3.5, 16, 4.5, 20]
+
+even = [number for number in n1 if number % 2 == 0 ]
+odd = [number for number in n1 if number % 2 != 0 ]
+
+print(even)
+# [0, 2, 4, 6, 8, 10]
+
+print(odd)
+# [1, 3, 5, 7, 9]
