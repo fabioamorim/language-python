@@ -1,11 +1,19 @@
 """
 Comprehensions
 
-- list comprehensions
+- List comprehensions
 
 newlist = [expression for item in iterable [if condition == True]]
 
+- Dictionary comprehensions
+
+newDict = {}
+
+{chave:valor for chave, valor in person.items()}
+
 """
+
+# List comprehension
 
 n1 = list(range(11))
 print(n1)
@@ -60,3 +68,17 @@ print(even)
 
 print(odd)
 # [1, 3, 5, 7, 9]
+
+# Dictionary comprehension
+
+person = {
+        'name': 'Fabio',
+        'age': 34
+}
+
+print({chave:valor for chave, valor in person.items()})
+# {'name': 'Fabio', 'age': 34}
+print({key for key in person.keys()})
+# {'age', 'name'}
+print({value for value in person.values()})
+# {'Fabio', 34}
