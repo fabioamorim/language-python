@@ -1,3 +1,8 @@
+'''
+    Check reader, writer, DocReader and DocWriter form csv lib in python.
+
+'''
+
 from csv import reader, DictReader 
 path = './files/lutadores.csv'
 
