@@ -1,4 +1,5 @@
 from datetime import datetime
+import timeit
 
 now = datetime.now()
 
@@ -30,3 +31,15 @@ today_format = now.strftime('%d/%m/%Y')
 
 print(today_format)
 # 16/03/2023
+
+print(datetime.now().strftime('%d/%m/%Y'))
+# 16/03/2023
+
+birthday = datetime.strptime('10/04/1988', '%d/%m/%Y')
+
+print(birthday)
+# datetime 1988-04-10 00:00:00
+
+tempo = timeit.timeit('"-".join(str(n) for n in range(100))', number=10000)
+
+print(tempo)
